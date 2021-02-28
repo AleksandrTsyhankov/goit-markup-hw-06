@@ -609,8 +609,6 @@ text-decoration: none;
 .socials-footer-container {
     display: flex;
     flex-direction: column;
-    
-    margin-right: 93px;
 }
 
 .socials-footer-title {
@@ -637,10 +635,13 @@ text-decoration: none;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
+
+    margin-left: auto;
 }
 
 .form-row {
     display: flex;
+    justify-content: fl;
 }
 
 .form-field-footer {
@@ -767,7 +768,8 @@ text-decoration: none;
     fill: currentColor;
 }
 
-.modal-button-close:hover {
+.modal-button-close:hover,
+.modal-button-close:focus {
     color: var(--accent-color);
 }
 
@@ -786,8 +788,12 @@ text-decoration: none;
     position: relative;
 }
 
-.modal-form-input-label {
+.modal-form-input-label:not(:last-child) {
     margin-bottom: 10px;
+}
+
+.modal-form-input-msg-label {
+    margin-bottom: 20px;
 }
 
 .text-lable {
@@ -893,7 +899,6 @@ text-decoration: none;
     line-height: 1.714;
     color: var(--text-color);
 
-    margin-top: 10px;
     margin-bottom: 30px;
 }
 
